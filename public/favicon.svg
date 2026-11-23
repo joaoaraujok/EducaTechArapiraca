@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#111018"/>
+  <rect x="3" y="3" width="58" height="58" rx="14" stroke="#6D28D9" stroke-width="2.5"/>
+  <!-- Letra "e" geométrica superior esquerda -->
+  <path d="M16 24H31C31 19 27.5 16 23.5 16C19 16 15.5 19.5 15.5 24C15.5 28.5 19 32 24 32C27.2 32 29.6 30.6 30.7 28.5" stroke="#F4F2FA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Trilha de circuito roxo conectando ao bloco inferior direito -->
+  <circle cx="15" cy="45" r="2.8" fill="#C4B5FD"/>
+  <path d="M17.5 45H26L30 37H35" stroke="#C4B5FD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="35.5" cy="37" r="3" fill="#DDF542"/>
+  <!-- Letra "t" tecnológica inferior direita -->
+  <path d="M43 29V45C43 47.8 44.8 49.5 47.8 49.5H50" stroke="#A78BFA" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 35H49" stroke="#A78BFA" stroke-width="4" stroke-linecap="round"/>
+</svg>

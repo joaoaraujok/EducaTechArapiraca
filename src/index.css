@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    background-color: #F4F2FA;
+    color: #111018;
+    font-family: 'Figtree', system-ui, sans-serif;
+    caret-color: #6D28D9;
+    scrollbar-color: #6D28D9 #E6E1F2;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: 'Sora', system-ui, sans-serif;
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  dd {
+    text-wrap: pretty;
+  }
+
+  a {
+    text-underline-offset: 4px;
+  }
+
+  :focus-visible {
+    outline: 2px solid #6D28D9;
+    outline-offset: 3px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #E6E1F2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C4B5FD;
+    border: 2px solid #E6E1F2;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6D28D9;
+  }
+}
+
+@layer utilities {
+  .tabular-nums-ui {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .perspective-stage {
+    perspective: 1100px;
+  }
+
+  .studio-vignette {
+    background: linear-gradient(
+      180deg,
+      rgba(17, 16, 24, 0.22) 0%,
+      rgba(17, 16, 24, 0.02) 45%,
+      rgba(17, 16, 24, 0.72) 100%
+    );
+  }
+}
