@@ -4,7 +4,7 @@ export const generalEventInfo: GeneralEventInfo = {
   eventName: 'EducaTech Arapiraca',
   city: 'Arapiraca, AL',
   institutionalSubtitle:
-    'Imersão de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca',
+    'Imersão em Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca',
   officialKit: 'Kit Maker Megalic',
 
   navItems: [
@@ -22,7 +22,7 @@ export const generalEventInfo: GeneralEventInfo = {
     badge: 'EducaTech Arapiraca • Currículo em Ação • NITED, CT&ED & SEMED',
     title: 'O FUTURO COMEÇA COM UMA IDEIA. E SE CONSTRÓI COM TECNOLOGIA.',
     subtitle:
-      'A Imersão de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca.',
+      'A Imersão em Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca.',
     primaryCta: 'Participar da imersão',
     highlights: [
       {
