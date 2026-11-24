@@ -2,7 +2,11 @@ import { generalEventInfo } from '../data/general';
 import { partnersConfig } from '../data/partners';
 import { EducaTechLogo } from './ui/EducaTechLogo';
 
-export function Footer() {
+interface FooterProps {
+  onNavigateHome?: (targetHref?: string) => void;
+}
+
+export function Footer({ onNavigateHome }: FooterProps) {
   const { eventName, institutionalSubtitle, navItems, contacts } =
     generalEventInfo;
 
@@ -23,6 +27,12 @@ export function Footer() {
           <div className="space-y-4 border-b border-white/12 pb-8">
             <a
               href="#inicio"
+              onClick={(event) => {
+                if (onNavigateHome) {
+                  event.preventDefault();
+                  onNavigateHome('#inicio');
+                }
+              }}
               className="group inline-flex items-center focus-visible:rounded"
               aria-label="EducaTech Arapiraca — Voltar ao início"
             >
@@ -52,19 +62,46 @@ export function Footer() {
             <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-light">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <a href={item.href} className="transition-colors hover:text-poster-lime">
+                  <a
+                    href={item.href}
+                    onClick={(event) => {
+                      if (onNavigateHome) {
+                        event.preventDefault();
+                        onNavigateHome(item.href);
+                      }
+                    }}
+                    className="transition-colors hover:text-poster-lime"
+                  >
                     {item.label}
                   </a>
                 </li>
               ))}
               <li>
-                <a href="#inscricoes" className="transition-colors hover:text-poster-lime">
+                <a
+                  href="#inscricoes"
+                  onClick={(event) => {
+                    if (onNavigateHome) {
+                      event.preventDefault();
+                      onNavigateHome('#inscricoes');
+                    }
+                  }}
+                  className="transition-colors hover:text-poster-lime"
+                >
                   Inscrições
                 </a>
               </li>
               <li>
-                <a href="#parceiros" className="transition-colors hover:text-poster-lime">
-                  Realização e Parceiros
+                <a
+                  href="#faq"
+                  onClick={(event) => {
+                    if (onNavigateHome) {
+                      event.preventDefault();
+                      onNavigateHome('#faq');
+                    }
+                  }}
+                  className="transition-colors hover:text-poster-lime"
+                >
+                  FAQ
                 </a>
               </li>
             </ul>

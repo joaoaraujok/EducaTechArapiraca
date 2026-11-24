@@ -4,187 +4,141 @@ export const generalEventInfo: GeneralEventInfo = {
   eventName: 'EducaTech Arapiraca',
   city: 'Arapiraca, AL',
   institutionalSubtitle:
-    'Encontro Municipal de Educação, Inovação, Tecnologia e Robótica Educacional',
+    'Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca',
   officialKit: 'Kit Maker Megalic',
 
   navItems: [
     { label: 'Sobre', href: '#sobre' },
-    { label: 'Competições', href: '#competicoes' },
-    { label: 'Como Participar', href: '#como-participar' },
-    { label: 'Localização', href: '#localizacao' },
-    { label: 'FAQ', href: '#faq' },
+    { label: 'Arenas', href: '#arenas' },
+    { label: 'Alinhamento Curricular', href: '#curriculo' },
+    { label: 'Programação', href: '#programacao' },
+    { label: 'Participação', href: '#participacao' },
+    { label: 'Regulamentos', href: '#regulamentos' },
+    { label: 'Notícias', href: '#noticias' },
+    { label: 'Parceiros', href: '#parceiros' },
   ],
 
   hero: {
-    badge: 'EducaTech Arapiraca • NITED & CT&ED • SEMED Arapiraca',
+    badge: 'EducaTech Arapiraca • Currículo em Ação • NITED, CT&ED & SEMED',
     title: 'O FUTURO COMEÇA COM UMA IDEIA. E SE CONSTRÓI COM TECNOLOGIA.',
     subtitle:
-      'Um encontro de criatividade, conhecimento e robótica educacional. Estudantes transformando ideias em movimento.',
-    primaryCta: 'Inscreva sua escola',
-    secondaryCta: 'Conheça as competições',
+      'O Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca.',
+    primaryCta: 'Participar do festival',
     highlights: [
       {
-        value: '4 níveis',
-        label: 'Do 4º ano à EJA',
-        detail: 'Etapas organizadas por faixa escolar',
+        value: 'Currículo em ação',
+        label: 'Estudante no centro',
+        detail: 'Soluções reais conectando escola, comunidade e território',
       },
       {
-        value: '6 modalidades',
-        label: 'Desafios práticos',
-        detail: 'Montagem, pilotagem e robôs autônomos',
+        value: '4 eixos',
+        label: 'Alinhamento curricular',
+        detail: 'Computação, mundo digital, cultura digital e Letramento em IA (LeIA)',
       },
       {
-        value: '3 estudantes',
-        label: 'Por equipe',
-        detail: 'Uma equipe por escola em cada nível',
+        value: '16/12/2026',
+        label: '8:00 às 17:00',
+        detail: 'Centro de Convenções de Arapiraca · Complexo do Lago da Perucaba',
       },
     ],
   },
 
   about: {
-    eyebrow: 'Sobre o evento',
-    title: 'Inovação e protagonismo estudantil nas escolas de Arapiraca',
-    lead: 'O EducaTech Arapiraca reúne estudantes da rede de ensino em torno de desafios reais de ciência, tecnologia e robótica educacional.',
+    title: 'Currículo em ação nas escolas de Arapiraca',
+    conceptLabel: 'Currículo em ação · Protagonismo estudantil, escola, comunidade e território',
+    lead: 'O EducaTech Arapiraca coloca os estudantes no centro da construção de soluções, conectando tecnologia, cultura digital e Inteligência Artificial à realidade da escola e do território.',
     description:
-      'Realizado pelo Núcleo de Inovação em Tecnologia Educacional (NITED) e pela Coordenação Tecnológica e Educacional (CT&ED), com apoio da Secretaria Municipal de Educação de Arapiraca, o evento estimula a robótica educacional em sala de aula utilizando o Kit Maker Megalic como plataforma comum em todas as competições.',
-    pillars: [
+      'Realizado pelo Núcleo de Inovação em Tecnologia Educacional (NITED) e pela Coordenação Tecnológica e Educacional (CT&ED), com apoio da Secretaria Municipal de Educação de Arapiraca (SEMED), o festival materializa o conceito pedagógico de "currículo em ação", integrando ciência, cultura digital e os cinco movimentos do encontro em toda a rede pública municipal.',
+    audiences: [
       {
-        id: 'aprendizagem-pratica',
-        title: 'Aprendizagem prática',
+        id: 'estudantes',
+        title: 'Estudantes da rede municipal',
         description:
-          'Aplicação direta de conceitos de mecânica, eletrônica e programação em protótipos construídos pelos próprios estudantes.',
-        iconName: 'wrench',
+          'Protagonistas do festival, do 4º ano do Ensino Fundamental à EJA, criando projetos, competindo e compartilhando soluções.',
       },
       {
-        id: 'criatividade-logica',
-        title: 'Criatividade e pensamento lógico',
+        id: 'educadores',
+        title: 'Professores e equipes gestoras',
         description:
-          'Desenvolvimento de raciocínio estruturado, algoritmos de controle e estratégias inteligentes para cada desafio.',
-        iconName: 'lightbulb',
+          'Orientadores das práticas em sala de aula, mediadores dos eixos curriculares e articuladores das delegações escolares.',
       },
       {
-        id: 'trabalho-equipe',
-        title: 'Trabalho em equipe',
+        id: 'familias',
+        title: 'Famílias e comunidade escolar',
         description:
-          'Colaboração entre até três estudantes por equipe, integrando planejamento, montagem, calibração e pilotagem.',
-        iconName: 'users',
+          'Público convidado a acompanhar as produções estudantis, valorizar conquistas e dialogar com o cotidiano escolar.',
       },
       {
-        id: 'resolucao-problemas',
-        title: 'Resolução de problemas',
+        id: 'instituicoes',
+        title: 'Instituições de ensino e pesquisa',
         description:
-          'Testes iterativos em pista e arena que capacitam os participantes a diagnosticar falhas e otimizar soluções.',
-        iconName: 'puzzle',
+          'Parceiras no fomento científico, compartilhamento de conhecimento, palestras e ações formativas.',
       },
       {
-        id: 'inovacao-educacao',
-        title: 'Inovação na educação',
+        id: 'empresas',
+        title: 'Empresas e parceiros de tecnologia',
         description:
-          'Fortalecimento das práticas pedagógicas contemporâneas e democratização do acesso à tecnologia educacional na rede pública.',
-        iconName: 'sparkles',
+          'Integrantes do ecossistema de inovação que apresentam ferramentas, demonstrações e conexões com o mundo digital.',
       },
-    ],
-  },
-
-  kitShowcase: {
-    title: 'Robô Zero · Arquitetura Modular',
-    subtitle:
-      'Todas as unidades escolares competem em igualdade de condições com a mesma plataforma modular de hardware educacional.',
-    modules: [
       {
-        code: 'M1',
-        title: 'Chassi Estrutural & Robô Zero',
+        id: 'visitantes',
+        title: 'Visitantes interessados em inovação',
         description:
-          'Base mecânica modular para montagem rápida, suporte de bateria e acoplamento de implementos de arena.',
-      },
-      {
-        code: 'M2',
-        title: 'Placa Controladora Lógica',
-        description:
-          'Unidade programável que coordena acionamento de motores, leitura de entradas digitais e rotinas autônomas.',
-      },
-      {
-        code: 'M3',
-        title: 'Sensores Ópticos e de Presença',
-        description:
-          'Conjunto de sensores para identificação de linha no solo e detecção de obstáculos em pista.',
-      },
-      {
-        code: 'M4',
-        title: 'Motores, Rodas e Tração',
-        description:
-          'Atuadores de precisão calibrados para manobras urbanas, percursos de velocidade e disputas em arena.',
-      },
-    ],
-    teamRolesTitle: 'Como atuam os 3 estudantes da equipe',
-    teamRolesDescription:
-      'Mesmo nas provas em que apenas um integrante opera ou monta na bancada, a preparação e a estratégia acontecem em trio.',
-    teamRoles: [
-      {
-        role: 'Engenharia & Montagem',
-        focus: 'Estrutura do chassi, fixação mecânica e conferência elétrica do Robô Zero.',
-      },
-      {
-        role: 'Lógica & Calibração',
-        focus: 'Programação, leitura de sensores e ajuste de resposta para cada pista.',
-      },
-      {
-        role: 'Operação & Arena',
-        focus: 'Pilotagem de precisão, leitura tática do percurso e tomadas de decisão em disputa.',
+          'Comunidade arapiraquense e regional convidada a vivenciar as exposições, palestras e desafios do evento.',
       },
     ],
   },
 
   participation: {
-    eyebrow: 'Como participar',
-    title: 'Passo a passo para a participação da sua escola',
+    title: 'Como participar do festival',
     subtitle:
-      'O processo de inscrição foi estruturado em etapas claras para que as unidades escolares organizem suas equipes com segurança.',
+      'Orientações organizadas para que unidades escolares, professores, equipes e estudantes participem das arenas com clareza.',
     ruleHighlight:
-      'Regra de participação: cada escola pode inscrever 1 (uma) equipe de até 3 estudantes por nível escolar, escolhendo uma das duas modalidades disponíveis naquele nível.',
+      'Na arena Robotics Challenge, cada escola pode inscrever 1 (uma) equipe de até 3 estudantes por nível escolar, escolhendo uma das duas modalidades exclusivas daquele nível. As orientações específicas das demais arenas constam em suas respectivas páginas e regulamentos.',
     steps: [
       {
         stepNumber: '01',
         title: 'Cadastro da escola',
-        description: 'A escola realiza seu cadastro institucional por meio do formulário oficial.',
+        description:
+          'A direção ou coordenação realiza o cadastro institucional da unidade escolar por meio do formulário oficial.',
       },
       {
         stepNumber: '02',
-        title: 'Organização das equipes',
+        title: 'Escolha das arenas e organização',
         description:
-          'A escola organiza as equipes de acordo com os níveis escolares em que deseja participar.',
+          'A escola mobiliza estudantes e professores para as frentes de interesse entre as cinco arenas do festival.',
       },
       {
         stepNumber: '03',
-        title: 'Formação por nível',
+        title: 'Formação das equipes',
         description:
-          'Cada equipe é formada por até três estudantes matriculados no respectivo nível escolar.',
+          'Na frente de robótica e nos desafios em grupo, as equipes são formadas respeitando a faixa escolar e os limites de cada regulamento.',
       },
       {
         stepNumber: '04',
-        title: 'Escolha da modalidade',
+        title: 'Seleção das modalidades e projetos',
         description:
-          'A equipe escolhe uma das duas modalidades disponíveis exclusivamente para o seu nível.',
+          'Definição da modalidade por nível no Robotics Challenge, jogos do E-JEAR, equipes do Ideathon ou projetos da ExpoTech.',
       },
       {
         stepNumber: '05',
-        title: 'Inscrição oficial',
+        title: 'Inscrição oficial e acompanhamento',
         description:
-          'O responsável realiza a inscrição da equipe pelo formulário correspondente ao nível.',
+          'O responsável envia a inscrição nos formulários correspondentes e acompanha comunicados, horários e regulamentos pelo portal.',
       },
     ],
   },
 
   preRegistrationChecklist: {
     schoolItems: [
-      'Identificação completa da unidade escolar da rede participante.',
-      'Nome completo e contato do gestor ou professor responsável pelo acompanhamento.',
-      'Mapeamento de em quais dos quatro níveis (4º–5º, 6º–7º, 8º–9º ou EJA) a escola terá equipe.',
+      'Identificação completa da unidade escolar da rede pública municipal de Arapiraca.',
+      'Nome completo e contato do gestor ou professor responsável pelo acompanhamento das delegações.',
+      'Mapeamento das arenas e dos níveis escolares em que a unidade participará.',
     ],
     teamItems: [
       'Conclusão prévia do cadastro institucional da escola (Etapa A).',
       'Definição de até 3 estudantes regularmente matriculados no mesmo nível escolar.',
-      'Escolha de uma das duas modalidades disponíveis exclusivamente para aquele nível.',
+      'Escolha de uma das duas modalidades disponíveis exclusivamente para aquele nível na arena Robotics Challenge.',
     ],
     guidanceNote:
       'Os links oficiais dos formulários serão publicados diretamente nesta seção pela coordenação do NITED e da CT&ED junto à Secretaria Municipal de Educação de Arapiraca.',
@@ -192,46 +146,46 @@ export const generalEventInfo: GeneralEventInfo = {
 
   faq: [
     {
+      id: 'o-que-e-educatech',
+      question: 'O que é o EducaTech Arapiraca?',
+      answer:
+        'É o Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca, estruturado sob o conceito de "currículo em ação" em cinco arenas: Robotics Challenge, E-JEAR, Ideathon, ExpoTech e i9 Stage.',
+    },
+    {
       id: 'quem-pode-participar',
-      question: 'Quem pode participar?',
+      question: 'Quem pode participar do festival?',
       answer:
-        'Podem participar estudantes matriculados nas escolas participantes da rede de ensino, distribuídos nos quatro níveis do evento: Nível 1 (4º e 5º anos), Nível 2 (6º e 7º anos), Nível 3 (8º e 9º anos) e Nível 4 (Educação de Jovens e Adultos, EJA).',
+        'Estudantes da rede municipal de Arapiraca (do 4º ano do Ensino Fundamental à EJA), professores, equipes gestoras, além de famílias, comunidade escolar, instituições de ensino e pesquisa, empresas de tecnologia e visitantes na programação aberta.',
     },
     {
-      id: 'quantos-estudantes',
-      question: 'Quantos estudantes podem formar uma equipe?',
+      id: 'quais-arenas',
+      question: 'Quais são as cinco arenas do evento?',
       answer:
-        'Cada equipe pode ser formada por até 3 (três) estudantes regularmente matriculados no nível escolar correspondente à inscrição.',
-    },
-    {
-      id: 'mais-de-um-nivel',
-      question: 'Uma escola pode participar de mais de um nível?',
-      answer:
-        'Sim. Uma mesma escola pode participar dos quatro níveis do EducaTech Arapiraca, desde que respeite o limite de 1 (uma) equipe por nível, escolhendo uma modalidade disponível naquele nível.',
-    },
-    {
-      id: 'quais-modalidades',
-      question: 'Quais modalidades estarão disponíveis?',
-      answer:
-        'São seis modalidades distribuídas por nível: Montagem do Robô Zero e Percurso com o Robô (Nível 1); Estourar o Balão e Futebol de Robôs / Sumô (Nível 2); Line-Follow e Desvio de Obstáculos / Sensor (Nível 3); Estourar o Balão e Montagem do Robô Zero (Nível 4, EJA).',
+        'São elas: Robotics Challenge (robótica, programação e automação), E-JEAR (Jogos Escolares de Arapiraca em formato eletrônico/digital), Ideathon (hackathon de IA e ODS), ExpoTech (exposição de projetos estudantis, ciência e empresas) e i9 Stage (palestras, talks, demonstrações e pitches).',
     },
     {
       id: 'qual-kit',
-      question: 'Qual kit será utilizado?',
+      question: 'Qual kit é utilizado nos desafios de robótica?',
       answer:
-        'Todas as modalidades do EducaTech Arapiraca utilizam exclusivamente o Kit Maker Megalic.',
+        'Todas as modalidades da arena Robotics Challenge utilizam exclusivamente o Kit Maker Megalic, garantindo igualdade técnica entre as escolas participantes.',
     },
     {
-      id: 'como-realizar-inscricao',
-      question: 'Como realizar a inscrição?',
+      id: 'equipes-robotica',
+      question: 'Quantos estudantes formam uma equipe no Robotics Challenge?',
       answer:
-        'Primeiro, a unidade escolar realiza seu cadastro geral no bloco Inscrição da escola (Etapa A). Em seguida, o responsável preenche o formulário de inscrição da equipe correspondente ao nível desejado na Etapa B.',
+        'Cada escola pode inscrever 1 (uma) equipe de até 3 estudantes por nível escolar (Nível 1: 4º e 5º anos; Nível 2: 6º e 7º anos; Nível 3: 8º e 9º anos; Nível 4: EJA), escolhendo uma das duas modalidades exclusivas do nível.',
+    },
+    {
+      id: 'data-programacao',
+      question: 'Quando acontece o evento?',
+      answer:
+        'O EducaTech Arapiraca acontece no dia 16 de dezembro de 2026, das 8:00 às 17:00, no Centro de Convenções de Arapiraca (Complexo do Lago da Perucaba).',
     },
     {
       id: 'como-acompanhar',
-      question: 'Como acompanhar as informações do evento?',
+      question: 'Onde acompanhar regulamentos, jogos do E-JEAR e programação detalhada?',
       answer:
-        'Todas as atualizações oficiais sobre data, horário, local e links de inscrição serão publicadas diretamente nesta página oficial e comunicadas pelas equipes do NITED, da CT&ED e da Secretaria Municipal de Educação de Arapiraca.',
+        'Todas as atualizações oficiais sobre horários por data, regulamentos em PDF, títulos do E-JEAR e notícias serão publicadas diretamente neste portal pelas equipes do NITED, da CT&ED e da SEMED Arapiraca.',
     },
   ],
 

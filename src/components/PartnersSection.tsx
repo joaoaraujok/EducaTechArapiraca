@@ -6,10 +6,10 @@ import { PosterChapter } from './ui/PosterChapter';
 import { Reveal } from './ui/Reveal';
 
 const INSTITUTIONAL_PILLS = [
-  'Rede Municipal de Arapiraca',
-  'Robótica Educacional',
-  '4 Níveis Escolares',
-  '6 Modalidades Oficiais',
+  'Rede Pública Municipal',
+  '5 Arenas do Festival',
+  '4 Eixos Curriculares',
+  '16 de Dezembro de 2026',
 ];
 
 function InstitutionalMark({ partner }: { partner: PartnerInstitution }) {
@@ -49,7 +49,7 @@ export function PartnersSection() {
           </InlineBadge>
         </>
       }
-      subtitle="Iniciativa pública dedicada à inovação pedagógica, tecnologia educacional e democratização da robótica nas escolas de Arapiraca."
+      subtitle="Iniciativa pública dedicada à inovação pedagógica, cultura digital, Inteligência Artificial e tecnologia educacional nas escolas de Arapiraca, reunindo instituições de ensino, pesquisa e parceiros."
     >
       <div className="space-y-8">
         <Reveal>

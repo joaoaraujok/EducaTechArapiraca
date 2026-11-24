@@ -13,7 +13,7 @@ export const partnersConfig: PartnerInstitution[] = [
     role: 'realizacao',
     roleLabel: 'Realização',
     description:
-      'Responsável pela articulação pedagógica, inovação tecnológica e fomento à robótica educacional nas unidades escolares.',
+      'Responsável pela articulação pedagógica, curadoria das experiências formativas e fomento à inovação, cultura digital e IA nas escolas.',
     logoUrl: '',
   },
   {
@@ -23,7 +23,7 @@ export const partnersConfig: PartnerInstitution[] = [
     role: 'realizacao',
     roleLabel: 'Realização',
     description:
-      'Coordenação técnica e educacional dedicada à integração de recursos digitais, infraestrutura e tecnologia educacional no ensino.',
+      'Coordenação técnica e educacional dedicada à integração de recursos digitais, infraestrutura tecnológica e projetos pedagógicos na rede pública.',
     logoUrl: '',
   },
   {
@@ -33,7 +33,7 @@ export const partnersConfig: PartnerInstitution[] = [
     role: 'apoio',
     roleLabel: 'Apoio Institucional',
     description:
-      'Apoio institucional ao fortalecimento da educação pública municipal, incentivando a ciência, a tecnologia e o protagonismo estudantil.',
+      'Apoio institucional ao fortalecimento da educação pública municipal, articulando o currículo em ação, a ciência e o protagonismo estudantil.',
     logoUrl: '',
   },
 ];

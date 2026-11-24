@@ -87,7 +87,7 @@ export function RegistrationsSection({
           </InlineBadge>
         </>
       }
-      subtitle="O credenciamento segue duas etapas obrigatórias: primeiro o cadastro institucional da escola (Etapa A) e, em seguida, a inscrição de até uma equipe por nível (Etapa B)."
+      subtitle="O credenciamento das unidades escolares ocorre em duas etapas: primeiro o cadastro institucional da escola (Etapa A) e, em seguida, a inscrição das equipes por nível (Etapa B)."
     >
       <div className="space-y-10">
         {selectedContext && (

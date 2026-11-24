@@ -12,9 +12,6 @@ export const modalitiesById: Record<ModalityId, Modality> = {
     teamRoleNote:
       'A equipe de até 3 estudantes treina em conjunto os passos de montagem; na rodada oficial, o representante designado executa a montagem cronometrada na bancada.',
     kitLabel: 'Kit oficial do evento',
-    imageUrl: '/images/mod-robo-zero.jpg',
-    imageAlt:
-      'Fotografia de estúdio dos componentes modulares do kit oficial organizados para montagem do Robô Zero',
   },
   'percurso-robo': {
     id: 'percurso-robo',
@@ -27,9 +24,6 @@ export const modalitiesById: Record<ModalityId, Modality> = {
     teamRoleNote:
       'O trio analisa o traçado, revisa o alinhamento mecânico do robô e define o piloto titular responsável por conduzir a travessia na pista.',
     kitLabel: 'Kit oficial do evento',
-    imageUrl: '/images/mod-percurso.jpg',
-    imageAlt:
-      'Fotografia do Robô Zero percorrendo circuito urbano simulado com faixas de pedestres e semáforo',
   },
   'estourar-balao': {
     id: 'estourar-balao',
@@ -42,8 +36,6 @@ export const modalitiesById: Record<ModalityId, Modality> = {
     teamRoleNote:
       'Os até 3 estudantes calibram a fixação da lança e planejam a estratégia defensiva enquanto o piloto conduz o robô na arena.',
     kitLabel: 'Kit oficial do evento',
-    imageUrl: '/images/mod-balao.jpg',
-    imageAlt: 'Fotografia de estúdio de robô educacional equipado com lança frontal em arena escura',
   },
   'futebol-sumo': {
     id: 'futebol-sumo',
@@ -56,8 +48,6 @@ export const modalitiesById: Record<ModalityId, Modality> = {
     teamRoleNote:
       'Modalidade com duas frentes de arena: a equipe prepara o robô para as partidas de Futebol e para os embates de Sumô conforme o regulamento do nível.',
     kitLabel: 'Kit oficial do evento',
-    imageUrl: '/images/mod-sumo.jpg',
-    imageAlt: 'Fotografia de dois robôs educacionais posicionados em arena circular de disputa',
   },
   'line-follow': {
     id: 'line-follow',
@@ -70,8 +60,6 @@ export const modalitiesById: Record<ModalityId, Modality> = {
     teamRoleNote:
       'Os até 3 integrantes colaboram diretamente na montagem dos sensores, escrita do código e calibração na pista antes da largada autônoma.',
     kitLabel: 'Kit oficial do evento',
-    imageUrl: '/images/mod-line.jpg',
-    imageAlt: 'Fotografia macro de robô autônomo seguindo linha branca demarcada em pista escura',
   },
   'desvio-obstaculos': {
     id: 'desvio-obstaculos',
@@ -84,9 +72,6 @@ export const modalitiesById: Record<ModalityId, Modality> = {
     teamRoleNote:
       'O trio divide o posicionamento dos sensores de presença, o ajuste dos limiares de distância e os testes iterativos de desvio automático.',
     kitLabel: 'Kit oficial do evento',
-    imageUrl: '/images/mod-obstaculos.jpg',
-    imageAlt:
-      'Fotografia de robô autônomo com sensores ultrassônicos contornando blocos geométricos em pista escura',
   },
 };
 

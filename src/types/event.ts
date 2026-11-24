@@ -8,6 +8,13 @@ export type ModalityId =
   | 'line-follow'
   | 'desvio-obstaculos';
 
+export type ArenaId =
+  | 'robotics-challenge'
+  | 'e-jear'
+  | 'ideathon'
+  | 'expotech'
+  | 'i9-stage';
+
 export interface NavItem {
   label: string;
   href: string;
@@ -19,22 +26,77 @@ export interface EventHighlight {
   detail: string;
 }
 
-export interface AboutPillar {
+export interface PublicAudience {
   id: string;
   title: string;
   description: string;
-  iconName: 'wrench' | 'lightbulb' | 'users' | 'puzzle' | 'sparkles';
 }
 
-export interface KitModule {
+export interface FestivalMovement {
+  id: string;
+  number: string;
+  title: string;
+  summary: string;
+  pedagogicalMeaning: string;
+  inPractice: string;
+  studentRole: string;
+  educatorRole: string;
+  relatedArenas: string[];
+}
+
+export interface CurriculumAxis {
+  id: string;
   code: string;
   title: string;
+  summary: string;
+  topics: string[];
+  isMunicipalInnovation?: boolean;
+  badgeLabel?: string;
+}
+
+export interface ArenaInfo {
+  id: ArenaId;
+  name: string;
+  tagline: string;
+  shortDescription: string;
+  highlightMeta: string;
+  accentTone: 'lavender' | 'lime' | 'peach' | 'sky' | 'purple';
+  presentation: string;
+  objectives: string[];
+  howItWorks: string;
+  audienceAndCategories: string[];
+  rulesAndRegulation: string[];
+  regulationUrl: string;
+  evaluationCriteria: string[];
+  scheduleNotes: string;
+  reservedGamesSlot?: boolean;
+  usesRoboticsBrowser?: boolean;
+}
+
+export interface ScheduleActivity {
+  time: string;
+  title: string;
+  arena: string;
   description: string;
 }
 
-export interface TeamRoleDefinition {
-  role: string;
-  focus: string;
+export interface ScheduleDay {
+  id: string;
+  dateLabel: string;
+  shortLabel: string;
+  title: string;
+  statusLabel: string;
+  summary: string;
+  items: ScheduleActivity[];
+}
+
+export interface NewsItem {
+  id: string;
+  date: string;
+  category: string;
+  title: string;
+  summary: string;
+  url?: string;
 }
 
 export interface PreRegistrationChecklist {
@@ -51,8 +113,6 @@ export interface Modality {
   objective: string;
   teamRoleNote: string;
   kitLabel: string;
-  imageUrl?: string;
-  imageAlt: string;
 }
 
 export interface CompetitionLevel {
@@ -120,26 +180,16 @@ export interface GeneralEventInfo {
     title: string;
     subtitle: string;
     primaryCta: string;
-    secondaryCta: string;
     highlights: EventHighlight[];
   };
   about: {
-    eyebrow: string;
     title: string;
+    conceptLabel: string;
     lead: string;
     description: string;
-    pillars: AboutPillar[];
-  };
-  kitShowcase: {
-    title: string;
-    subtitle: string;
-    modules: KitModule[];
-    teamRolesTitle: string;
-    teamRolesDescription: string;
-    teamRoles: TeamRoleDefinition[];
+    audiences: PublicAudience[];
   };
   participation: {
-    eyebrow: string;
     title: string;
     subtitle: string;
     ruleHighlight: string;

@@ -13,14 +13,14 @@ export function HowToParticipateSection() {
 
   return (
     <PosterChapter
-      id="como-participar"
+      id="participacao"
       surface="peach"
       framed
       title={
         <>
-          Como participar em{' '}
+          Participação em{' '}
           <InlineBadge tone="lime" rotate="left">
-            5 etapas
+            5 passos
           </InlineBadge>
         </>
       }

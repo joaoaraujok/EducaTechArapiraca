@@ -1,6 +1,6 @@
 # EducaTech Arapiraca
 
-Portal institucional oficial do **EducaTech Arapiraca**, encontro municipal de educação, inovação, tecnologia e competições de robótica educacional.
+Portal institucional oficial do **EducaTech Arapiraca** — **Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca** (*"Currículo em Ação"*).
 
 Realização do **NITED** (Núcleo de Inovação em Tecnologia Educacional) e da **CT&ED** (Coordenação Tecnológica e Educacional), com apoio institucional da **Secretaria Municipal de Educação de Arapiraca (SEMED)**.
 
@@ -10,7 +10,6 @@ Realização do **NITED** (Núcleo de Inovação em Tecnologia Educacional) e da
 - **Vite 6**
 - **Tailwind CSS**
 - **Motion** (`motion/react`)
-- **Three.js** (`RobotStage3D`)
 - **Lucide React**
 
 ## Requisitos e comandos
@@ -34,30 +33,17 @@ npm run build
 npm run preview
 ```
 
-## Configuração de dados do evento
+## Estrutura de dados editáveis
 
-Os conteúdos editáveis ficam centralizados em `src/data/`:
+Os conteúdos e áreas preparadas para atualização ficam centralizados em `src/data/`:
 
-- `src/data/general.ts`: textos institucionais, pilares pedagógicos, módulos do Robô Zero, checklist de inscrição, FAQ e canais de contato.
-- `src/data/competitions.ts`: níveis escolares (Nível 1 ao Nível 4 / EJA) e suas respectivas modalidades oficiais.
-- `src/data/forms.ts`: links oficiais dos formulários Google Forms (cadastro da escola e inscrição das equipes por nível).
-- `src/data/location.ts`: data, horário, nome do local, endereço e URLs do Google Maps.
-- `src/data/partners.ts`: instituições realizadoras, apoiadora e caminhos dos logotipos oficiais em `public/`.
-- `src/data/navigation.ts`: mapa de seções utilizado pelo rastreamento de navegação no cabeçalho.
-
-## Estrutura do projeto
-
-```text
-├── public/
-│   ├── images/          # Fotografias editoriais do evento e das modalidades
-│   └── favicon.svg      # Ícone vetorial do EducaTech Arapiraca
-├── src/
-│   ├── components/      # Seções da página, estágio 3D e componentes de UI
-│   ├── data/            # Dados configuráveis do evento
-│   ├── hooks/           # Hooks customizados (rastreamento de seção ativa)
-│   ├── lib/             # Utilitários e constantes de movimento
-│   └── types/           # Tipagens TypeScript do domínio do evento
-├── DESIGN.md            # Diretrizes visuais do projeto
-├── PRODUCT.md           # Escopo institucional e regras do evento
-└── index.html           # Documento base e metadados
-```
+- `src/data/general.ts`: informações institucionais, públicos do festival, orientações de participação e FAQ.
+- `src/data/arenas.ts`: as 5 arenas oficiais (**Robotics Challenge**, **E-JEAR**, **Ideathon**, **ExpoTech** e **i9 Stage**), regras, critérios e cronograma.
+- `src/data/curriculum.ts`: os 5 movimentos pedagógicos (*Explorar, Criar, Testar, Competir, Transformar*) e os 4 eixos curriculares (incluindo **Letramento em IA — LeIA**).
+- `src/data/competitions.ts`: níveis e modalidades da arena **Robotics Challenge**.
+- `src/data/schedule.ts`: programação oficial de **16 de dezembro de 2026**.
+- `src/data/location.ts`: data, horário, nome do local, endereço e links do Google Maps.
+- `src/data/news.ts`: comunicados, novidades e registros do festival.
+- `src/data/forms.ts`: links dos formulários Google Forms.
+- `src/data/partners.ts`: instituições realizadoras e apoiadoras.
+- `src/data/navigation.ts`: mapa de navegação principal do portal.

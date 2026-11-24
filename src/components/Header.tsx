@@ -8,7 +8,12 @@ import { EASE_ARCHITECTURAL, SPRING_SNAPPY } from '../lib/motion';
 import { ActionButton } from './ui/ActionButton';
 import { EducaTechLogo } from './ui/EducaTechLogo';
 
-export function Header() {
+interface HeaderProps {
+  activeArenaName?: string | null;
+  onNavigateHome?: (targetHref?: string) => void;
+}
+
+export function Header({ activeArenaName, onNavigateHome }: HeaderProps) {
   const [isIndexOpen, setIsIndexOpen] = useState(false);
   const { activeHref, activeSection } = useActiveSection();
 
@@ -33,7 +38,14 @@ export function Header() {
     };
   }, [isIndexOpen]);
 
-  const activeLabel = activeSection.label;
+  const activeLabel = activeArenaName ?? activeSection.label;
+
+  const handleLinkClick = (href: string) => {
+    setIsIndexOpen(false);
+    if (onNavigateHome) {
+      onNavigateHome(href);
+    }
+  };
 
   return (
     <>
@@ -42,7 +54,14 @@ export function Header() {
           <div className="flex h-14 items-center justify-between gap-1.5 px-3 sm:gap-2 sm:px-6">
             <a
               href="#inicio"
-              onClick={() => setIsIndexOpen(false)}
+              onClick={(event) => {
+                if (onNavigateHome) {
+                  event.preventDefault();
+                  handleLinkClick('#inicio');
+                } else {
+                  setIsIndexOpen(false);
+                }
+              }}
               className="group inline-flex min-h-[44px] shrink-0 items-center focus-visible:rounded-full"
               aria-label="EducaTech Arapiraca — Voltar ao início"
             >
@@ -63,11 +82,12 @@ export function Header() {
                   <Layers className="h-4 w-4 text-brand-purple" aria-hidden="true" />
                 )}
                 <span className="hidden sm:inline">{activeLabel}</span>
-                <span className="sm:hidden">Índice</span>
+                <span className="sm:hidden">Menu</span>
               </button>
 
               <ActionButton
-                href="#inscricoes"
+                href={activeArenaName ? undefined : '#inscricoes'}
+                onClick={activeArenaName ? () => handleLinkClick('#inscricoes') : undefined}
                 variant="carbon"
                 icon="arrow-right"
                 className="px-4 py-1.5 text-xs"
@@ -96,7 +116,7 @@ export function Header() {
           >
             <motion.nav
               id="editorial-index-drawer"
-              aria-label="Índice de navegação"
+              aria-label="Menu de navegação"
               initial={{ opacity: 0, y: -12, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -10, scale: 0.98 }}
@@ -104,17 +124,24 @@ export function Header() {
               className="mx-auto w-full max-w-[780px] space-y-6 rounded-[28px] border border-ink-carbon/12 bg-bg-canvas p-6 shadow-poster-stage sm:p-8"
             >
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-purple">
-                Capítulos do portal
+                Áreas do festival
               </p>
 
               <ul className="divide-y divide-ink-carbon/10 border-y border-ink-carbon/10">
                 {indexLinks.map((item, idx) => {
-                  const isCurrent = activeHref === item.href;
+                  const isCurrent = !activeArenaName && activeHref === item.href;
                   return (
                     <li key={item.href}>
                       <a
                         href={item.href}
-                        onClick={() => setIsIndexOpen(false)}
+                        onClick={(event) => {
+                          if (onNavigateHome) {
+                            event.preventDefault();
+                            handleLinkClick(item.href);
+                          } else {
+                            setIsIndexOpen(false);
+                          }
+                        }}
                         aria-current={isCurrent ? 'location' : undefined}
                         className="flex min-h-[56px] items-center justify-between gap-4 py-3 transition-colors hover:text-brand-purple"
                       >

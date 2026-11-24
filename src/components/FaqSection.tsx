@@ -26,7 +26,7 @@ export function FaqSection() {
           </InlineBadge>
         </>
       }
-      subtitle="Regras de formação de equipes, níveis escolares, modalidades disponíveis e estrutura das provas."
+      subtitle="Dúvidas sobre o festival, participação escolar, cinco arenas, alinhamento curricular e equipamentos."
     >
       <div className="space-y-3">
         {generalEventInfo.faq.map((item, idx) => {
