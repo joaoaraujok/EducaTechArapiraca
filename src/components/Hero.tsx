@@ -164,21 +164,21 @@ export function Hero() {
               {FESTIVAL_DIMENSIONS.map((item) => (
                 <div
                   key={item.code}
-                  className="flex flex-col gap-1 py-3.5 first:pt-0 last:pb-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+                  className="flex flex-col gap-1 py-3.5 first:pt-0 last:pb-0 sm:flex-row sm:items-baseline sm:gap-6"
                 >
-                  <dt className="flex items-baseline gap-3 font-display text-base font-bold text-ink-light sm:text-lg">
-                    <span className="tabular-nums-ui text-xs font-extrabold text-poster-lime">
-                      {item.code}
-                    </span>
-                    <span>{item.title}</span>
-                  </dt>
-                  <dd className="max-w-[44ch] text-sm leading-relaxed text-ink-light-muted">
-                    {item.detail}
-                  </dd>
-                </div>
+                    <dt className="flex items-baseline gap-3 font-display text-base font-bold text-ink-light sm:w-60 sm:shrink-0 sm:text-lg">
+                      <span className="tabular-nums-ui text-xs font-extrabold text-poster-lime">
+                        {item.code}
+                      </span>
+                      <span>{item.title}</span>
+                    </dt>
+                      <dd className="max-w-[44ch] text-sm leading-relaxed text-ink-light-muted sm:flex-1">
+                        {item.detail}
+                      </dd>
+                    </div>
               ))}
-            </dl>
-          </motion.div>
+                  </dl>
+                </motion.div>
         </motion.div>
       </div>
     </section>
