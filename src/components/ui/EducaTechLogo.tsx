@@ -11,31 +11,22 @@ interface EducaTechLogoProps {
 
 const SIZE_STYLES = {
   sm: {
-    word: 'text-base sm:text-lg',
-    circuitW: 26,
-    circuitH: 13,
-    gap: 'gap-1',
+    svgHeight: 'h-8 sm:h-9',
     city: 'text-xs',
   },
   md: {
-    word: 'text-xl',
-    circuitW: 32,
-    circuitH: 16,
-    gap: 'gap-1.5',
+    svgHeight: 'h-10',
     city: 'text-xs',
   },
   lg: {
-    word: 'text-2xl sm:text-3xl',
-    circuitW: 40,
-    circuitH: 20,
-    gap: 'gap-2',
+    svgHeight: 'h-12 sm:h-14',
     city: 'text-xs sm:text-sm',
   },
 } as const;
 
 /**
- * Lockup tipográfico escalonado em duas linhas minúsculas com proporções largas
- * inspiradas em squadeasy, integrado a trilha de circuito tecnológico animada em roxo.
+ * Lockup vetorial unificado em SVG para garantir proporções idênticas entre desktop e mobile,
+ * com trilha de circuito tecnológico e nós animados em roxo.
  */
 export function EducaTechLogo({
   tone = 'light',
@@ -46,8 +37,8 @@ export function EducaTechLogo({
   const [isHovered, setIsHovered] = useState(false);
 
   const cfg = SIZE_STYLES[size];
-  const primaryText = tone === 'dark' ? 'text-ink-light' : 'text-ink-carbon';
-  const accentText = tone === 'dark' ? 'text-brand-lavender' : 'text-brand-purple';
+  const primaryFill = tone === 'dark' ? '#F6F5FB' : '#111018';
+  const accentFill = tone === 'dark' ? '#C4B5FD' : '#6D28D9';
   const traceColor = tone === 'dark' ? '#C4B5FD' : '#6D28D9';
   const pulseColor = tone === 'dark' ? '#DDF542' : '#9333EA';
   const nodeFill = tone === 'dark' ? '#DDF542' : '#7C3AED';
@@ -56,116 +47,126 @@ export function EducaTechLogo({
   const cityColor = tone === 'dark' ? 'text-brand-lavender' : 'text-ink-slate';
 
   return (
-    <span
-      onPointerEnter={() => setIsHovered(true)}
-      onPointerLeave={() => setIsHovered(false)}
+    <motion.span
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       onFocus={() => setIsHovered(true)}
       onBlur={() => setIsHovered(false)}
-      className={`inline-flex items-center gap-3 select-none ${className}`}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.96 }}
+      transition={{ type: 'spring', stiffness: 360, damping: 22 }}
+      className={`inline-flex shrink-0 items-center gap-2.5 whitespace-nowrap select-none sm:gap-3 ${className}`}
     >
-      <span className="inline-flex flex-col leading-none">
-        <span
-          className={`font-display ${cfg.word} font-extrabold lowercase leading-[0.82] tracking-[-0.06em] ${primaryText}`}
+      <span className="sr-only">EducaTech</span>
+
+      <motion.svg
+        viewBox="0 0 118 46"
+        fill="none"
+        overflow="visible"
+        aria-hidden="true"
+        className={`${cfg.svgHeight} w-auto shrink-0 overflow-visible`}
+      >
+        <text
+          x="2"
+          y="19"
+          fill={primaryFill}
+          fontFamily="'Sora', sans-serif"
+          fontWeight="800"
+          fontSize="24"
+          letterSpacing="-1.2"
         >
           educa
-        </span>
+        </text>
 
-        <span className={`-mt-[0.28em] inline-flex items-center ${cfg.gap}`}>
-          {/* Trilha de circuito tecnológico com overflow-visible e viewBox amplo para evitar cortes */}
-          <motion.svg
-            width={cfg.circuitW}
-            height={cfg.circuitH}
-            viewBox="0 0 36 18"
-            fill="none"
-            overflow="visible"
-            aria-hidden="true"
-            className="shrink-0 overflow-visible"
-            animate={
-              isHovered
-                ? { scale: 1.2, rotate: -4 }
-                : { scale: 1, rotate: 0 }
-            }
-            transition={{ type: 'spring', stiffness: 340, damping: 18 }}
-          >
-            {/* Trilha base */}
-            <path
-              d="M6.5 13H15.5L21 5H29.5"
-              stroke={traceColor}
-              strokeWidth="2.3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+        {/* Trilha base do circuito tecnológico */}
+        <path
+          d="M8 36H18L24 27H36"
+          stroke={traceColor}
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
 
-            {/* Onda de energia percorrendo o circuito no hover */}
-            <motion.path
-              d="M6.5 13H15.5L21 5H29.5"
-              stroke={pulseColor}
-              strokeWidth="2.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeDasharray="32"
-              initial={{ strokeDashoffset: 32, opacity: 0 }}
-              animate={{
-                strokeDashoffset: isHovered ? 0 : 32,
-                opacity: isHovered ? 1 : 0,
-              }}
-              transition={{ duration: 0.42, ease: EASE_ARCHITECTURAL }}
-            />
+        {/* Pulso de energia percorrendo a trilha (ativo no hover e em batimento ambiente sutil) */}
+        <motion.path
+          d="M8 36H18L24 27H36"
+          stroke={pulseColor}
+          strokeWidth="2.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeDasharray="36"
+          initial={{ strokeDashoffset: 36, opacity: 0 }}
+          animate={
+            isHovered
+              ? { strokeDashoffset: 0, opacity: 1 }
+              : { strokeDashoffset: [36, 0, -36], opacity: [0, 0.9, 0] }
+          }
+          transition={
+            isHovered
+              ? { duration: 0.4, ease: EASE_ARCHITECTURAL }
+              : {
+                  duration: 1.6,
+                  repeat: Infinity,
+                  repeatDelay: 2.6,
+                  ease: 'easeInOut',
+                }
+          }
+        />
 
-            {/* Nó inicial */}
-            <motion.circle
-              cx="6"
-              cy="13"
-              r="2.4"
-              fill={traceColor}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-              animate={isHovered ? { scale: 1.35 } : { scale: 1 }}
-              transition={{ duration: 0.24, ease: EASE_ARCHITECTURAL }}
-            />
+        {/* Nó inicial à esquerda */}
+        <motion.circle
+          cx="8"
+          cy="36"
+          fill={traceColor}
+          initial={{ r: 2.5 }}
+          animate={{ r: isHovered ? 3.4 : 2.5 }}
+          transition={{ duration: 0.24, ease: EASE_ARCHITECTURAL }}
+        />
 
-            {/* Anel expansivo irradiando do nó terminal */}
-            <motion.circle
-              cx="30"
-              cy="5"
-              r="3"
-              fill="none"
-              stroke={ringStroke}
-              strokeWidth="1.6"
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-              initial={false}
-              animate={
-                isHovered
-                  ? { scale: [0.9, 2.2], opacity: [0.85, 0] }
-                  : { scale: 0.9, opacity: 0 }
-              }
-              transition={
-                isHovered
-                  ? { duration: 1.05, repeat: Infinity, ease: 'easeOut' }
-                  : { duration: 0.2 }
-              }
-            />
+        {/* Anel expansivo centrado exatamente no nó terminal (cx=36, cy=27) */}
+        <motion.circle
+          cx="36"
+          cy="27"
+          fill="none"
+          stroke={ringStroke}
+          strokeWidth="1.6"
+          initial={{ r: 3, opacity: 0 }}
+          animate={
+            isHovered
+              ? { r: [3, 8.5], opacity: [0.85, 0] }
+              : { r: [3, 7], opacity: [0, 0.55, 0] }
+          }
+          transition={
+            isHovered
+              ? { duration: 1.05, repeat: Infinity, ease: 'easeOut' }
+              : { duration: 1.4, repeat: Infinity, repeatDelay: 2.8, ease: 'easeOut' }
+          }
+        />
 
-            {/* Nó terminal */}
-            <motion.circle
-              cx="30"
-              cy="5"
-              r="2.6"
-              fill={nodeFill}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-              animate={isHovered ? { scale: 1.35 } : { scale: 1 }}
-              transition={{ type: 'spring', stiffness: 360, damping: 16 }}
-            />
-          </motion.svg>
+        {/* Nó terminal */}
+        <motion.circle
+          cx="36"
+          cy="27"
+          fill={nodeFill}
+          initial={{ r: 2.8 }}
+          animate={{ r: isHovered ? 3.8 : 2.8 }}
+          transition={{ type: 'spring', stiffness: 360, damping: 16 }}
+        />
 
-          <motion.span
-            animate={isHovered ? { x: 2 } : { x: 0 }}
-            transition={{ type: 'spring', stiffness: 340, damping: 20 }}
-            className={`font-display ${cfg.word} font-extrabold lowercase leading-[0.82] tracking-[-0.06em] ${accentText}`}
-          >
-            tech
-          </motion.span>
-        </span>
-      </span>
+        <motion.text
+          x="44"
+          y="38"
+          fill={accentFill}
+          fontFamily="'Sora', sans-serif"
+          fontWeight="800"
+          fontSize="24"
+          letterSpacing="-1.2"
+          animate={{ x: isHovered ? 45.5 : 44 }}
+          transition={{ type: 'spring', stiffness: 340, damping: 20 }}
+        >
+          tech
+        </motion.text>
+      </motion.svg>
 
       {showCity && (
         <span className="hidden items-center gap-2.5 sm:inline-flex">
@@ -175,6 +176,6 @@ export function EducaTechLogo({
           </span>
         </span>
       )}
-    </span>
+    </motion.span>
   );
 }
