@@ -28,7 +28,7 @@ export function ArenasSection({ onOpenArena }: ArenasSectionProps) {
           <InlineBadge tone="purple" rotate="left">
             arenas
           </InlineBadge>{' '}
-          do festival
+          da imersão
         </>
       }
       subtitle="Cinco experiências integradas conectando robótica, jogos digitais, inteligência artificial, mostra científica e diálogos sobre inovação."

@@ -17,7 +17,7 @@ export const festivalArenas: ArenaInfo[] = [
       'Promover o protagonismo estudantil do 4º ano do Ensino Fundamental à EJA em pistas e arenas oficiais.',
     ],
     howItWorks:
-      'Cada unidade escolar organiza até 1 equipe de até 3 estudantes por nível escolar, escolhendo uma das duas modalidades exclusivas daquele nível. Todas as provas acontecem em bancadas, pistas e arenas oficiais do festival.',
+      'Cada unidade escolar organiza até 1 equipe de até 3 estudantes por nível escolar, escolhendo uma das duas modalidades exclusivas daquele nível. Todas as provas acontecem em bancadas, pistas e arenas oficiais da imersão.',
     audienceAndCategories: [
       'Nível 1: 4º e 5º anos do Ensino Fundamental (Montagem do Robô Zero ou Percurso com o Robô).',
       'Nível 2: 6º e 7º anos do Ensino Fundamental (Estourar o Balão ou Futebol de Robôs / Sumô).',
@@ -153,11 +153,11 @@ export const festivalArenas: ArenaInfo[] = [
     highlightMeta: 'Talks · Demonstrações · Pitches',
     accentTone: 'sky',
     presentation:
-      'O i9 Stage concentra a programação de palco do festival, reunindo educadores, pesquisadores, especialistas, parceiros e estudantes em conversas curtas, demonstrações ao vivo e apresentações de destaque.',
+      'O i9 Stage concentra a programação de palco da imersão, reunindo educadores, pesquisadores, especialistas, parceiros e estudantes em conversas curtas, demonstrações ao vivo e apresentações de destaque.',
     objectives: [
       'Promover formação continuada e troca de referências contemporâneas para educadores e gestores.',
       'Inspirar estudantes e famílias com temas de ciência, carreira tecnológica e cidadania digital.',
-      'Abrir espaço para visibilidade de boas práticas escolares e apresentações de pitches do festival.',
+      'Abrir espaço para visibilidade de boas práticas escolares e apresentações de pitches da imersão.',
     ],
     howItWorks:
       'Blocos temáticos sequenciais ao longo do evento com palestras rápidas, painéis dialogados, demonstrações práticas de tecnologia educacional e apresentações estudantis.',

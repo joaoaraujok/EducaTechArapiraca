@@ -13,7 +13,7 @@ web
 
 ## Product Purpose
 
-Portal institucional oficial do **EducaTech Arapiraca**, definido como o **Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca**, sob o conceito pedagógico **"currículo em ação"**.
+Portal institucional oficial do **EducaTech Arapiraca**, definido como a **Imersão de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca**, sob o conceito pedagógico **"currículo em ação"**.
 
 Seu propósito é apresentar o posicionamento educacional e os cinco movimentos do evento (*Explorar, Criar, Testar, Competir e Transformar*), destacar suas **5 arenas** com detalhes específicos, demonstrar o alinhamento aos **4 eixos curriculares municipais** (incluindo o **Letramento em IA — LeIA**, inovação desenvolvida pelo próprio município), divulgar a programação e o local do dia **16 de dezembro de 2026**, e conduzir escolas e participantes aos regulamentos simplificados, orientações e formulários de inscrição.
 

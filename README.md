@@ -1,6 +1,6 @@
 # EducaTech Arapiraca
 
-Portal institucional oficial do **EducaTech Arapiraca** — **Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca** (*"Currículo em Ação"*).
+Portal institucional oficial do **EducaTech Arapiraca** — **Imersão de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca** (*"Currículo em Ação"*).
 
 Realização do **NITED** (Núcleo de Inovação em Tecnologia Educacional) e da **CT&ED** (Coordenação Tecnológica e Educacional), com apoio institucional da **Secretaria Municipal de Educação de Arapiraca (SEMED)**.
 
@@ -37,13 +37,13 @@ npm run preview
 
 Os conteúdos e áreas preparadas para atualização ficam centralizados em `src/data/`:
 
-- `src/data/general.ts`: informações institucionais, públicos do festival, orientações de participação e FAQ.
+- `src/data/general.ts`: informações institucionais, públicos da imersão, orientações de participação e FAQ.
 - `src/data/arenas.ts`: as 5 arenas oficiais (**Robotics Challenge**, **E-JEAR**, **Ideathon**, **ExpoTech** e **i9 Stage**), regras, critérios e cronograma.
 - `src/data/curriculum.ts`: os 5 movimentos pedagógicos (*Explorar, Criar, Testar, Competir, Transformar*) e os 4 eixos curriculares (incluindo **Letramento em IA — LeIA**).
 - `src/data/competitions.ts`: níveis e modalidades da arena **Robotics Challenge**.
 - `src/data/schedule.ts`: programação oficial de **16 de dezembro de 2026**.
 - `src/data/location.ts`: data, horário, nome do local, endereço e links do Google Maps.
-- `src/data/news.ts`: comunicados, novidades e registros do festival.
+- `src/data/news.ts`: comunicados, novidades e registros da imersão.
 - `src/data/forms.ts`: links dos formulários Google Forms.
 - `src/data/partners.ts`: instituições realizadoras e apoiadoras.
 - `src/data/navigation.ts`: mapa de navegação principal do portal.

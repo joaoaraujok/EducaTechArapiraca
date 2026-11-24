@@ -110,8 +110,8 @@ export function Hero() {
 
               <div className="flex justify-center pt-1">
                 <motion.a
-                  href="#conceito-festival"
-                  aria-label="Conhecer o conceito do festival"
+                  href="#conceito-imersao"
+                  aria-label="Conhecer o conceito da imersão"
                   animate={{ y: [0, 5, 0] }}
                   transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                   className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink-carbon/12 bg-white/75 text-brand-purple transition-colors hover:bg-poster-lime hover:text-ink-carbon"
@@ -125,7 +125,7 @@ export function Hero() {
 
         {/* Cartão protagonista em carbono que sobe sobre o título no scroll (sem fotos) */}
         <motion.div
-          id="conceito-festival"
+          id="conceito-imersao"
           style={{ scale: stageScale }}
           className="relative z-20 mt-8 will-change-transform sm:mt-10"
         >
@@ -155,7 +155,7 @@ export function Hero() {
                 Estudantes no centro da construção de soluções
               </h2>
               <p className="max-w-[54ch] text-sm leading-relaxed text-ink-light-muted sm:text-base">
-                Um festival construído a partir da escola, da comunidade e do território para
+                Uma imersão construída a partir da escola, da comunidade e do território para
                 compartilhar aprendizagens ao longo de todo o dia 16 de dezembro de 2026.
               </p>
             </div>

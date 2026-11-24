@@ -279,7 +279,7 @@ export function ArenaDetailView({
               Continuar explorando o EducaTech Arapiraca
             </h3>
             <p className="max-w-[54ch] text-sm leading-relaxed text-ink-slate sm:text-base">
-              Confira os formulários de participação ou avance para a próxima arena do festival.
+              Confira os formulários de participação ou avance para a próxima arena da imersão.
             </p>
             <div className="flex flex-wrap gap-3">
               <ActionButton

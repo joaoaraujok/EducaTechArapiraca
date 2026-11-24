@@ -124,7 +124,7 @@ export function Header({ activeArenaName, onNavigateHome }: HeaderProps) {
               className="mx-auto w-full max-w-[780px] space-y-6 rounded-[28px] border border-ink-carbon/12 bg-bg-canvas p-6 shadow-poster-stage sm:p-8"
             >
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-purple">
-                Áreas do festival
+                Áreas da imersão
               </p>
 
               <ul className="divide-y divide-ink-carbon/10 border-y border-ink-carbon/10">

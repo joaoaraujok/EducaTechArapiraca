@@ -4,7 +4,7 @@ export const generalEventInfo: GeneralEventInfo = {
   eventName: 'EducaTech Arapiraca',
   city: 'Arapiraca, AL',
   institutionalSubtitle:
-    'Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca',
+    'Imersão de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca',
   officialKit: 'Kit Maker Megalic',
 
   navItems: [
@@ -22,8 +22,8 @@ export const generalEventInfo: GeneralEventInfo = {
     badge: 'EducaTech Arapiraca • Currículo em Ação • NITED, CT&ED & SEMED',
     title: 'O FUTURO COMEÇA COM UMA IDEIA. E SE CONSTRÓI COM TECNOLOGIA.',
     subtitle:
-      'O Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca.',
-    primaryCta: 'Participar do festival',
+      'A Imersão de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca.',
+    primaryCta: 'Participar da imersão',
     highlights: [
       {
         value: 'Currículo em ação',
@@ -48,13 +48,13 @@ export const generalEventInfo: GeneralEventInfo = {
     conceptLabel: 'Currículo em ação · Protagonismo estudantil, escola, comunidade e território',
     lead: 'O EducaTech Arapiraca coloca os estudantes no centro da construção de soluções, conectando tecnologia, cultura digital e Inteligência Artificial à realidade da escola e do território.',
     description:
-      'Realizado pelo Núcleo de Inovação em Tecnologia Educacional (NITED) e pela Coordenação Tecnológica e Educacional (CT&ED), com apoio da Secretaria Municipal de Educação de Arapiraca (SEMED), o festival materializa o conceito pedagógico de "currículo em ação", integrando ciência, cultura digital e os cinco movimentos do encontro em toda a rede pública municipal.',
+      'Realizado pelo Núcleo de Inovação em Tecnologia Educacional (NITED) e pela Coordenação Tecnológica e Educacional (CT&ED), com apoio da Secretaria Municipal de Educação de Arapiraca (SEMED), a imersão materializa o conceito pedagógico de "currículo em ação", integrando ciência, cultura digital e os cinco movimentos do encontro em toda a rede pública municipal.',
     audiences: [
       {
         id: 'estudantes',
         title: 'Estudantes da rede municipal',
         description:
-          'Protagonistas do festival, do 4º ano do Ensino Fundamental à EJA, criando projetos, competindo e compartilhando soluções.',
+          'Protagonistas da imersão, do 4º ano do Ensino Fundamental à EJA, criando projetos, competindo e compartilhando soluções.',
       },
       {
         id: 'educadores',
@@ -90,7 +90,7 @@ export const generalEventInfo: GeneralEventInfo = {
   },
 
   participation: {
-    title: 'Como participar do festival',
+    title: 'Como participar da imersão',
     subtitle:
       'Orientações organizadas para que unidades escolares, professores, equipes e estudantes participem das arenas com clareza.',
     ruleHighlight:
@@ -106,7 +106,7 @@ export const generalEventInfo: GeneralEventInfo = {
         stepNumber: '02',
         title: 'Escolha das arenas e organização',
         description:
-          'A escola mobiliza estudantes e professores para as frentes de interesse entre as cinco arenas do festival.',
+          'A escola mobiliza estudantes e professores para as frentes de interesse entre as cinco arenas da imersão.',
       },
       {
         stepNumber: '03',
@@ -149,11 +149,11 @@ export const generalEventInfo: GeneralEventInfo = {
       id: 'o-que-e-educatech',
       question: 'O que é o EducaTech Arapiraca?',
       answer:
-        'É o Festival de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca, estruturado sob o conceito de "currículo em ação" em cinco arenas: Robotics Challenge, E-JEAR, Ideathon, ExpoTech e i9 Stage.',
+        'É a Imersão de Tecnologia, Inovação, Cultura Digital e Inteligência Artificial da Rede Pública Municipal de Educação de Arapiraca, estruturada sob o conceito de "currículo em ação" em cinco arenas: Robotics Challenge, E-JEAR, Ideathon, ExpoTech e i9 Stage.',
     },
     {
       id: 'quem-pode-participar',
-      question: 'Quem pode participar do festival?',
+      question: 'Quem pode participar da imersão?',
       answer:
         'Estudantes da rede municipal de Arapiraca (do 4º ano do Ensino Fundamental à EJA), professores, equipes gestoras, além de famílias, comunidade escolar, instituições de ensino e pesquisa, empresas de tecnologia e visitantes na programação aberta.',
     },

@@ -44,7 +44,7 @@ export const festivalMovements: FestivalMovement[] = [
     id: 'competir',
     number: '04',
     title: 'Competir',
-    summary: 'Viver desafios saudáveis, trabalho em equipe, respeito às regras e fair play nas arenas do festival.',
+    summary: 'Viver desafios saudáveis, trabalho em equipe, respeito às regras e fair play nas arenas da imersão.',
     pedagogicalMeaning:
       'Na perspectiva educacional, competir é compartilhar conquistas coletivas, lidar com pressão com equilíbrio e celebrar a superação de todas as escolas.',
     inPractice:
@@ -59,7 +59,7 @@ export const festivalMovements: FestivalMovement[] = [
     title: 'Transformar',
     summary: 'Compartilhar soluções com a rede municipal e gerar impacto positivo duradouro nas escolas e na cidade.',
     pedagogicalMeaning:
-      'Transformar fecha o ciclo do festival levando as aprendizagens de volta ao cotidiano escolar para inspirar novas práticas durante todo o ano letivo.',
+      'Transformar fecha o ciclo da imersão levando as aprendizagens de volta ao cotidiano escolar para inspirar novas práticas durante todo o ano letivo.',
     inPractice:
       'Projetos expostos na ExpoTech, ideias do Ideathon e diálogos do i9 Stage multiplicam boas práticas para famílias, gestores e comunidade.',
     studentRole: 'Comunicar resultados com clareza e atuar como agente de inovação na própria escola.',

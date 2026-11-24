@@ -16,7 +16,7 @@ export function CurriculumSection() {
           </InlineBadge>
         </>
       }
-      subtitle="O festival conecta cada desafio aos quatro eixos do currículo municipal de tecnologia e cultura digital de Arapiraca, incluindo o Letramento em Inteligência Artificial (LeIA), desenvolvido como inovação pelo município."
+      subtitle="A imersão conecta cada desafio aos quatro eixos do currículo municipal de tecnologia e cultura digital de Arapiraca, incluindo o Letramento em Inteligência Artificial (LeIA), desenvolvido como inovação pelo município."
     >
       <div className="space-y-5">
         {curriculumAxes.map((axis, index) => {

@@ -69,7 +69,7 @@ export function AboutSection() {
           <InteractiveCard className="space-y-5 rounded-[28px] border border-ink-carbon/12 bg-bg-white p-6 shadow-editorial-card sm:p-8">
             <div className="space-y-1.5 border-b border-ink-carbon/10 pb-4">
               <h3 className="font-display text-2xl font-extrabold tracking-tight text-ink-carbon">
-                Públicos principais do festival
+                Públicos principais da imersão
               </h3>
               <p className="max-w-[54ch] text-sm leading-relaxed text-ink-slate sm:text-base">
                 O encontro articula a escola, a família, a pesquisa científica e o ecossistema de
@@ -185,7 +185,7 @@ export function AboutSection() {
               <div className="space-y-3 border-t border-ink-carbon/10 pt-4">
                 <div className="space-y-1">
                   <h5 className="text-xs font-bold uppercase tracking-[0.12em] text-brand-purple">
-                    Como acontece no festival
+                    Como acontece na imersão
                   </h5>
                   <p className="max-w-[54ch] text-sm leading-relaxed text-ink-slate">
                     {selectedMovement.movement.inPractice}

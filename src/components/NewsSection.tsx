@@ -20,7 +20,7 @@ export function NewsSection() {
           </InlineBadge>
         </>
       }
-      subtitle="Espaço oficial para comunicados às unidades escolares, novidades das arenas, editais e registros do festival."
+      subtitle="Espaço oficial para comunicados às unidades escolares, novidades das arenas, editais e registros da imersão."
     >
       {hasNews ? (
         <div className="space-y-4">

@@ -7,7 +7,7 @@ import { Reveal } from './ui/Reveal';
 
 const INSTITUTIONAL_PILLS = [
   'Rede Pública Municipal',
-  '5 Arenas do Festival',
+  '5 Arenas da Imersão',
   '4 Eixos Curriculares',
   '16 de Dezembro de 2026',
 ];
